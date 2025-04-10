@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Counseling Bot</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+<header class="header">
+    <div class="logo">Career Counseling Bot</div>
+    <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#goals">Career Goals</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <button class="nav-toggle"><i class="fas fa-bars"></i></button>
+</header>
+
+<section id="home" class="hero">
+    <h1>Build Your Dream Career</h1>
+    <p>Your AI companion for career success.</p>
+    <button class="cta-button">Start Now</button>
+</section>
+
+<section id="features" class="features">
+    <h2>Discover Our Features</h2>
+    <div class="feature-grid">
+        <div class="feature-card">
+            <i class="fas fa-briefcase"></i>
+            <h3>Job Search Tips</h3>
+            <p>Find opportunities that match your skills.</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-file-alt"></i>
+            <h3>Resume Advice</h3>
+            <p>Craft a standout resume.</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-chart-line"></i>
+            <h3>Career Planning</h3>
+            <p>Map out your professional journey.</p>
+        </div>
+    </div>
+</section>
+
+<section id="goals" class="career-goals">
+    <h2>Set Your Career Goals</h2>
+    <form id="goals-form" class="goals-form">
+        <input type="text" id="career-field" placeholder="Desired Career Field (e.g., Software Engineering)" required>
+        <input type="text" id="experience-level" placeholder="Experience Level (e.g., Entry-Level)" required>
+        <textarea id="career-notes" placeholder="Your Career Goals or Questions (optional)"></textarea>
+        <button type="submit">Plan My Career</button>
+    </form>
+    <div id="goals-output" class="goals-output"></div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Get in Touch</h2>
+    <form id="contact-form" class="contact-form">
+        <input type="text" id="contact-name" placeholder="Your Name" required>
+        <input type="email" id="contact-email" placeholder="Your Email" required>
+        <textarea id="contact-message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<div class="chatbot-container">
+    <button id="chatbot-button" class="chatbot-button">
+        <i class="fas fa-comment-dots"></i>
+        <span class="chatbot-tooltip">Chat with CareerBot</span>
+    </button>
+    <div id="chatbot-window" class="chatbot-window">
+        <div class="chatbot-header">
+            <h3>CareerBot</h3>
+            <button id="close-chatbot" class="close-button"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="chatbot-messages" id="chatbot-messages"></div>
+        <div class="chatbot-input">
+            <input type="text" id="chatbot-input" placeholder="Ask about your career...">
+            <button onclick="sendMessage()"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <p>© 2025 Career Counseling Bot - Powered by xAI</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
